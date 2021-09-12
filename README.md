@@ -118,3 +118,11 @@ git pull 别名 分支
 git clone 项目链接
 ```
 
+## 十三、SSH免密登录
+
+```css
+ssh-keygen -t rsa -C 邮箱地址
+// 复制C://用户//用户名//.ssh的id_rsa.pub文件中的密钥
+找到Github账号设置中SSH and GPG keys，添加一个新的密钥
+```
+
