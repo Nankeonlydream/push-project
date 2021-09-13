@@ -126,3 +126,46 @@ ssh-keygen -t rsa -C 邮箱地址
 找到Github账号设置中SSH and GPG keys，添加一个新的密钥
 ```
 
+## 十四、IDEA继承Git
+
+### 14.1 配置忽略文件（与实际功能无关的文件）
+
+- 创建git.ignore文件在用户文件夹下
+
+```xml
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+hs_err_pid*
+
+.classpath
+.project
+.settings
+target
+.idea
+*.iml
+```
+
+- 配置.gitconfig文件
+
+```xml
+[core]
+		excludesfile = C:/Users/Cherry/git.ignore
+```
+
